@@ -9,6 +9,28 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function showme() {
+            Swal.fire({
+                title: "Hallo!",
+                text: "Wleowleo",
+                icon: "success"
+            });
+        }
+        function changeText() {
+            const element = document.getElementById("judul");
+            element.innerHTML = "Kopi kenangan wleowleo";
+        }
+
+        function changeStyle() {
+            const element = document.getElementById("tombol");
+            element.style.color = "yellow";
+            element.style.background = "red";
+        }
+
+    </script>
 
     <style>
         body {
@@ -77,7 +99,7 @@
             bottom: 0;
             width: 100%;
             height: 120px;
-            background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
         }
 
         .dots {
@@ -89,99 +111,106 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <!-- BOX UTAMA -->
-    <div class="row">
-        <div class="col">
+        <!-- BOX UTAMA -->
+        <div class="row">
+            <div class="col">
 
-            <div class="box shadow">
+                <div class="box shadow">
 
-                <!-- PROFILE -->
-                <div class="row">
-                    <div class="col">
-                        <img src="https://ugc.production.linktr.ee/yVDZp3L2QT2FJId6ejGI_vY629qu6S0EB24BX?io=true&size=avatar-v3_0" class="foto">
-                        <p class="judul">Kopi Kenangan</p>
+                    <!-- PROFILE -->
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://ugc.production.linktr.ee/yVDZp3L2QT2FJId6ejGI_vY629qu6S0EB24BX?io=true&size=avatar-v3_0"
+                                class="foto">
+                            <h1 id="judul">Kopi Kenangan</h1>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="showme();">Change alert</button>
+                    <button class="btn btn-primary" onclick="changeText();">Change Text</button>
+                    <button class="btn btn-primary" onclick="changeStyle();">Change Style</button>
+
+                    <!-- LINK -->
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#">Barista Part Time (Pekanbaru): 5 Posisi</a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#">Barista Part Time (Bali): 5 Posisi</a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#">Barista Part Time (Medan): 5 Posisi</a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#">Barista Part Time (Padang): 5 Posisi</a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#">Barista Part Time (Batam): 5 Posisi</a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#">Supervisor Outlet (Bali): 1 Posisi</a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#">Store Manager (Bali): 1 Posisi</a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#">Barista Part Time (Jakarta): 6 Posisi</a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
+                    </div>
+
+                    <!-- BUTTON -->
+                    <div class="row">
+                        <div class="col link-box">
+                            <a href="#" id="tombol">
+                                Bergabung dengan KopiKenanganAtma di Linktree
+                            </a>
+                            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        </div>
                     </div>
                 </div>
-
-                <!-- LINK -->
-                <div class="row">
-                    <div class="col link-box">
-                        <a href="#">Barista Part Time (Pekanbaru): 5 Posisi</a>
-                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col link-box">
-                        <a href="#">Barista Part Time (Bali): 5 Posisi</a>
-                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col link-box">
-                        <a href="#">Barista Part Time (Medan): 5 Posisi</a>
-                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col link-box">
-                        <a href="#">Barista Part Time (Padang): 5 Posisi</a>
-                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col link-box">
-                        <a href="#">Barista Part Time (Batam): 5 Posisi</a>
-                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col link-box">
-                        <a href="#">Supervisor Outlet (Bali): 1 Posisi</a>
-                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col link-box">
-                        <a href="#">Store Manager (Bali): 1 Posisi</a>
-                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col link-box">
-                        <a href="#">Barista Part Time (Jakarta): 6 Posisi</a>
-                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
-                    </div>
-                </div>
-
-                <!-- BUTTON -->
-                <div class="row">
-                    <div class="col">
-                        <a href="#" class="tombol">
-                            Bergabung dengan KopiKenanganAtma di Linktree
-                        </a>
-                    </div>
-                </div>
-                    </div>
-                </div>
-
             </div>
 
         </div>
+
+    </div>
     </div>
 
-</div>
+    </div>
 
-<!-- GRADIENT -->
-<div class="fade-bawah"></div>
+    <!-- GRADIENT -->
+    <div class="fade-bawah"></div>
 
 </body>
+
 </html>
